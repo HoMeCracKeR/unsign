@@ -12,3 +12,6 @@ endian.o: endian.c endian.h
 
 unsign.o: unsign.c endian.h
 	$(CC) $(CFLAGS) $< -o $@
+
+clean:
+	rm -f unsign endian.o unsign.o
